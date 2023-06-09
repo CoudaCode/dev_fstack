@@ -8,7 +8,7 @@ config();
 const app = express();
 app.use(cors());
 app.use("/", routes);
-
+const uri = "mongodb+srv://coudadm:@test.vxjcz1t.mongodb.net/?retryWrites=true&w=majority"
 mongoose
   .connect(`${uri}`)
   .then(() => {
