@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const Blog = new Schema(
+const blog = new Schema(
   {
     title: {
       type: String,
@@ -18,6 +18,7 @@ const Blog = new Schema(
   }
 );
 
-const AllBlog = model("Blog", Blog);
+const AllBlog = model("blog", blog);
+
 
 export default AllBlog;
