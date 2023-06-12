@@ -28,5 +28,5 @@ mongoose
   });
 
 if (process.env.NODE_ENV === "production") {
-  app.get("/**/*", res.sendFile("../dist/index.html"));
+  app.get("*", res.sendFile("../dist/index.html"));
 }
