@@ -3,7 +3,6 @@ import express from "express";
 import { config } from "dotenv";
 import routes from "./routes.js";
 import mongoose from "mongoose";
-import res from "express/lib/response.js";
 const PORT = 4000;
 config();
 

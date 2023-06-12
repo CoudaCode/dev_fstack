@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "server": "nodemon ./api/app.js",
+    "start": "nodemon ./api/app.js",
     "preview": "vite preview"
   },
   "dependencies": {
