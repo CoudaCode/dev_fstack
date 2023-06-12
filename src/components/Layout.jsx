@@ -1,5 +1,5 @@
 import { useState, useRef , useEffect, useMemo} from "react";
-import { useAppContext } from "../context/index";
+import { useAppContext } from "../context";
 
 function Layout({ children }) {
 
@@ -10,7 +10,6 @@ function Layout({ children }) {
   const [isCollapse, setCollapse] = useState(false);
   const toggleVisibility = () => setCollapse(!isCollapse);
   const handleOnChange = e => {
-   
     setPost({...post, [e.target.name]: e.target.value})
   }
   const handleOnSubmit = e => {
