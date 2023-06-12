@@ -40,7 +40,7 @@ function Layout({ children }) {
         </div>
       </nav>
       <div className="layout container">
-        <button className="btn btn-dark float-end mb-4" onClick={toggleVisibility}>add</button>
+        <button className="btn btn-dark float-end mb-4" onClick={toggleVisibility}>{isCollapse ? "Close" : "Add +"}</button>
        {isCollapse && <form action="" className="mt-5" onSubmit={handleOnSubmit}>
             <input ref={inputRef} type="text" name="title" className="form-control my-1" onChange={handleOnChange} />
             <textarea ref={textRef} className="form-control" name="body" onChange={handleOnChange} style={{height : "100px"}}></textarea>
