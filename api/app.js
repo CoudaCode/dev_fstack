@@ -3,7 +3,7 @@ import express from "express";
 import { config } from "dotenv";
 import routes from "./routes.js";
 import mongoose from "mongoose";
-import res from "express/lib/response.js";
+// import res from "express/lib/response.js";
 const PORT = 4000;
 config();
 
@@ -27,6 +27,6 @@ mongoose
     console.log(error);
   });
 
-if (process.env.NODE_ENV === "production") {
-  app.get("/**/*", res.sendFile("../dist/index.html"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.get("/**/*", res.sendFile("../dist/index.html"));
+// }
