@@ -1,5 +1,6 @@
 import { useState, useRef , useEffect, useMemo} from "react";
 import { useAppContext } from "../context";
+import { text } from "express";
 
 function Layout({ children }) {
 
@@ -15,6 +16,9 @@ function Layout({ children }) {
   const handleOnSubmit = e => {
     e.preventDefault();
     addPosts(post)
+    inputRef.current.value = null,
+    text.current.value = null
+    toggleVisibility(false)
   }
 
     const isValid = useMemo(()=>{
